@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MController!{% endblock %}
+
+{% block body %}
+<div>
+    <form action="/test" method="post">
+        <input type="date" name="date" required="true">
+        <select name="timezone" id="timezone" class="span5">
+            <option>Europe/London</option>
+            <option>Asia/Tokyo</option>
+            <option>America/Lower_Princes</option>
+        </select>
+        <input type="submit" vlaue="Submit" >
+    </form>
+</div>
+{% endblock %}
